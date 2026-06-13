@@ -1,7 +1,98 @@
-.ipynb_checkpoints/
+# --- python ---
 __pycache__/
-*.pyc
-.DS_Store
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# --- jupyter ---
+.ipynb_checkpoints/
+*.ipynb.trusted
+*/.ipynb_checkpoints/*
+.jupyter/
+
+# --- spark ---
+spark-warehouse/
+metastore_db/
+*.derby.log
+.sparkStaging/
+**/spark-events/
+checkpoint/
+**/checkpoints/
+
+# --- data artifacts (raw_source kept, generated excluded) ---
+*.parquet
+*.avro
+*.orc
+*.feather
+*.joblib
+*.pkl
+*.h5
+*.hdf5
+*.pb
+*.onnx
+model/
+models/
+**/mlruns/
+**/mlartifacts/
+
+# --- environment & secrets ---
 .env
+.env.*
+*.env
+venv/
+.venv/
+virtualenv/
+.virtualenv/
+conda-env/
+
+# --- IDE & editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vs/
+*.sublime-project
+*.sublime-workspace
+
+# --- OS ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# --- logs & temp ---
 *.log
+*.tmp
+*.temp
+tmp/
+temp/
+.tmp/
+.temp/
+
+# --- docker (if any) ---
+.docker/
+docker-compose.override.yml
+
+# --- mlflow & experiment tracking ---
+mlruns/
+mlartifacts/
+
+# --- dask ---
+dask-worker-space/
+
+# --- misc data science ---
+.science/
+wandb/
+runs/
+
+# --- project specific ---
 AGENTS.md
